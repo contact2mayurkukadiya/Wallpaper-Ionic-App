@@ -1,0 +1,15 @@
+<ion-header class="feature-header">
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content scroll-y="false">
+  <ion-slides pager="true" [options]="slidesOpts" class="feature-slider">
+    <ion-slide *ngFor="let item of itemList;let i = index" class="feature-slide">
+      <img [src]="item.image" />
+    </ion-slide>
+  </ion-slides>
+</ion-content>
